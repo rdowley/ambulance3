@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Pid: 1
+  Pfname: MyString
+  Psname: MyString
+  Pcontactno: 1
+  Paddress: MyString
+
+two:
+  Pid: 1
+  Pfname: MyString
+  Psname: MyString
+  Pcontactno: 1
+  Paddress: MyString
