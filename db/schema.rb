@@ -11,7 +11,35 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121125152738) do
+ActiveRecord::Schema.define(:version => 20121206205531) do
+
+  create_table "medical_conditions", :force => true do |t|
+    t.integer  "Patient_Pid"
+    t.string   "BloodType"
+    t.integer  "BloodPressure"
+    t.integer  "HeartRate"
+    t.string   "Defibrilator"
+    t.string   "HeartCondition"
+    t.string   "DrugsAdministered"
+    t.string   "Alergies"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
+
+  add_index "medical_conditions", ["Patient_Pid", "created_at"], :name => "index_medical_conditions_on_Patient_Pid_and_created_at"
+
+  create_table "medrecords", :force => true do |t|
+    t.integer  "p_pid"
+    t.string   "bt"
+    t.integer  "bp"
+    t.integer  "hr"
+    t.string   "defib"
+    t.string   "hc"
+    t.string   "drugs"
+    t.string   "alergies"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "patients", :force => true do |t|
     t.integer  "Pid"

@@ -1,4 +1,7 @@
 Ambulance3::Application.routes.draw do
+  resources :medrecords
+
+
   resources :patients
 
 

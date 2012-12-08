@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Patient_Pid: 1
+  BloodType: MyString
+  BloodPressure: 1
+  HeartRate: 
+  Defibrilator: MyString
+  HeartCondition: MyString
+  DrugsAdministered: MyString
+  Alergies: MyString
+
+two:
+  Patient_Pid: 1
+  BloodType: MyString
+  BloodPressure: 1
+  HeartRate: 
+  Defibrilator: MyString
+  HeartCondition: MyString
+  DrugsAdministered: MyString
+  Alergies: MyString

@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>P pid:</b>
+  <%= @medrecord.p_pid %>
+</p>
+
+<p>
+  <b>Bt:</b>
+  <%= @medrecord.bt %>
+</p>
+
+<p>
+  <b>Bp:</b>
+  <%= @medrecord.bp %>
+</p>
+
+<p>
+  <b>Hr:</b>
+  <%= @medrecord.hr %>
+</p>
+
+<p>
+  <b>Defib:</b>
+  <%= @medrecord.defib %>
+</p>
+
+<p>
+  <b>Hc:</b>
+  <%= @medrecord.hc %>
+</p>
+
+<p>
+  <b>Drugs:</b>
+  <%= @medrecord.drugs %>
+</p>
+
+<p>
+  <b>Alergies:</b>
+  <%= @medrecord.alergies %>
+</p>
+
+
+<%= link_to 'Edit', edit_medrecord_path(@medrecord) %> |
+<%= link_to 'Back', medrecords_path %>

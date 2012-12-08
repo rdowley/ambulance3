@@ -1,0 +1,2 @@
+module MedrecordsHelper
+end

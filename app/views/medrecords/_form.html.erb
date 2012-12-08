@@ -1,0 +1,49 @@
+<%= form_for(@medrecord) do |f| %>
+  <% if @medrecord.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@medrecord.errors.count, "error") %> prohibited this medrecord from being saved:</h2>
+
+      <ul>
+      <% @medrecord.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :p_pid %><br />
+    <%= f.number_field :p_pid %>
+  </div>
+  <div class="field">
+    <%= f.label :bt %><br />
+    <%= f.text_field :bt %>
+  </div>
+  <div class="field">
+    <%= f.label :bp %><br />
+    <%= f.number_field :bp %>
+  </div>
+  <div class="field">
+    <%= f.label :hr %><br />
+    <%= f.number_field :hr %>
+  </div>
+  <div class="field">
+    <%= f.label :defib %><br />
+    <%= f.text_field :defib %>
+  </div>
+  <div class="field">
+    <%= f.label :hc %><br />
+    <%= f.text_field :hc %>
+  </div>
+  <div class="field">
+    <%= f.label :drugs %><br />
+    <%= f.text_field :drugs %>
+  </div>
+  <div class="field">
+    <%= f.label :alergies %><br />
+    <%= f.text_field :alergies %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
