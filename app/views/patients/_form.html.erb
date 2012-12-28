@@ -13,23 +13,26 @@
 
 
   <div class="field">
-    <%= f.label :Pfname %><br />
+    <%= f.label :Pfname, "First Name" %><br />
     <%= f.text_field :Pfname %>
   </div>
   <div class="field">
-    <%= f.label :Psname %><br />
+    <%= f.label :Psname, "Surname" %><br />
     <%= f.text_field :Psname %>
   </div>
   <div class="field">
-    <%= f.label :Psex %><br />
-    <%= f.text_field :Psex %>
+    <%= f.label :Psex, "Gender" %><br />
+    <%= f.radio_button :Psex, 'male' %> 
+    <%= label :psex_male, 'Male' %>
+    <%= f.radio_button :Psex, 'female' %>
+    <%= label :Psex_female, 'Female' %>
   </div>
   <div class="field">
-    <%= f.label :Pcontactno %><br />
+    <%= f.label :Pcontactno, "Phone Number" %><br />
     <%= f.number_field :Pcontactno %>
   </div>
   <div class="field">
-    <%= f.label :Paddress %><br />
+    <%= f.label :Paddress, "Address" %><br />
     <%= f.text_field :Paddress %>
   </div>
   <div class="actions">

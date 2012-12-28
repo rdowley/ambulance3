@@ -1,13 +1,14 @@
-<h1>Listing patients</h1>
+<h1>Patient Index</h1>
 
 <table>
   <tr>
-    <th>Patient id</th>
-    <th>First Name</th>
-    <th>Surname</th>
-    <th>Sex</th>
-    <th>Contact Number</th>
+    <th>Patient Id No. |</th>
+    <th>First Name |</th>
+    <th>Surname |</th>
+    <th>Sex |</th>
+    <th>Contact Number |</th>
     <th>Address</th>
+    <th></th>
     <th></th>
     <th></th>
     <th></th>
@@ -25,10 +26,12 @@
     <td><%= link_to 'Show', patient %></td>
     <td><%= link_to 'Edit', edit_patient_path(patient) %></td>
     <td><%= link_to 'Destroy', patient, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Create New Medical Record', new_medrecord_path %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Patient', new_patient_path %>
+<%= link_to 'New Patient', new_patient_path %> |
+<%= link_to 'Medical Records Index', medrecords_path %>
