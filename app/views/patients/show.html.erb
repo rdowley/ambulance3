@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Pid:</b>
-  <%= @patient.Pid %>
+  <b>id:</b>
+  <%= @patient.id %>
 </p>
 
 <p>
@@ -29,6 +29,8 @@
   <b>Paddress:</b>
   <%= @patient.Paddress %>
 </p>
+
+<%= render 'patientmedicalrecord' %>
 
 
 <%= link_to 'Edit', edit_patient_path(@patient) %> |

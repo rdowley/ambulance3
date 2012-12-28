@@ -2,12 +2,13 @@
 
 <table>
   <tr>
-    <th>Pid</th>
-    <th>Pfname</th>
-    <th>Psname</th>
-    <th>Psex</th>
-    <th>Pcontactno</th>
-    <th>Paddress</th>
+    <th>Patient id</th>
+    <th>First Name</th>
+    <th>Surname</th>
+    <th>Sex</th>
+    <th>Contact Number</th>
+    <th>Address</th>
+    <th></th>
     <th></th>
     <th></th>
     <th></th>
@@ -15,7 +16,7 @@
 
 <% @patients.each do |patient| %>
   <tr>
-    <td><%= patient.Pid %></td>
+    <td><%= patient.id %></td>
     <td><%= patient.Pfname %></td>
     <td><%= patient.Psname %></td>
     <td><%= patient.Psex %></td>

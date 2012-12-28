@@ -1,0 +1,27 @@
+<h1>Listing of patients Medical Records</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Blood Type</th>
+    <th>Blood Pressure</th>
+    <th>Heart Rate</th>
+    <th>Defibrillator used</th>
+    <th>Heart Condition</th>
+    <th>Drugs</th>
+    <th>Alergies</th>
+  </tr>
+
+<% @medrecords.each do |medrecord| %>
+  <tr>
+    <td><%= medrecord.created_at %></td>
+    <td><%= medrecord.bt %></td>
+    <td><%= medrecord.bp %></td>
+    <td><%= medrecord.hr %></td>
+    <td><%= medrecord.defib %></td>
+    <td><%= medrecord.hc %></td>
+    <td><%= medrecord.drugs %></td>
+    <td><%= medrecord.alergies %></td>
+  </tr>
+<% end %>
+</table>

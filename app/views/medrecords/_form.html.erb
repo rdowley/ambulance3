@@ -11,39 +11,40 @@
     </div>
   <% end %>
 
+
   <div class="field">
-    <%= f.label :p_pid %><br />
-    <%= f.number_field :p_pid %>
+    <%= f.label :patient_id, "Patient Id" %><br />
+    <%= f.text_field :patient_id %>
   </div>
   <div class="field">
-    <%= f.label :bt %><br />
+    <%= f.label :bt, "Blood Type" %><br />
     <%= f.text_field :bt %>
   </div>
   <div class="field">
-    <%= f.label :bp %><br />
+    <%= f.label :bp, "Blood Pressure" %><br />
     <%= f.number_field :bp %>
   </div>
   <div class="field">
-    <%= f.label :hr %><br />
+    <%= f.label :hr, "Heart Rate" %><br />
     <%= f.number_field :hr %>
   </div>
   <div class="field">
-    <%= f.label :defib %><br />
+    <%= f.label :defib, "Defibrillator" %><br />
     <%= f.text_field :defib %>
   </div>
   <div class="field">
-    <%= f.label :hc %><br />
+    <%= f.label :hc, "Heart Condition" %><br />
     <%= f.text_field :hc %>
   </div>
   <div class="field">
-    <%= f.label :drugs %><br />
+    <%= f.label :drugs, "Drugs used/administered" %><br />
     <%= f.text_field :drugs %>
   </div>
   <div class="field">
-    <%= f.label :alergies %><br />
+    <%= f.label :alergies, "Alergies" %><br />
     <%= f.text_field :alergies %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Create Medical Record" %>
   </div>
 <% end %>

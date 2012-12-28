@@ -1,5 +1,5 @@
 class Medrecord < ActiveRecord::Base
-  attr_accessible :alergies, :bp, :bt, :defib, :drugs, :hc, :hr, :p_pid
+  attr_accessible :alergies, :bp, :bt, :defib, :drugs, :hc, :hr, :patient_id
 
   belongs_to :patient
 

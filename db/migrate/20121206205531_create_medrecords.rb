@@ -1,7 +1,7 @@
 class CreateMedrecords < ActiveRecord::Migration
   def change
     create_table :medrecords do |t|
-      t.references :patient
+      t.references :patient_id
       t.string :bt
       t.integer :bp
       t.integer :hr
@@ -12,6 +12,6 @@ class CreateMedrecords < ActiveRecord::Migration
 
       t.timestamps
     end
-        add_index :medrecords, [:p_pid, :created_at]
+
   end
 end

@@ -1,13 +1,13 @@
-<h1>Listing medrecords</h1>
+<h1>Medical Records Listing</h1>
 
 <table>
   <tr>
-    <th>P pid</th>
-    <th>Bt</th>
-    <th>Bp</th>
-    <th>Hr</th>
-    <th>Defib</th>
-    <th>Hc</th>
+    <th>Patient Id</th>
+    <th>Blood Type</th>
+    <th>Blood Pressure</th>
+    <th>Heart Rate</th>
+    <th>Defibrillator</th>
+    <th>Heart Condition</th>
     <th>Drugs</th>
     <th>Alergies</th>
     <th></th>
@@ -17,7 +17,7 @@
 
 <% @medrecords.each do |medrecord| %>
   <tr>
-    <td><%= medrecord.p_pid %></td>
+    <td><%= medrecord.patient_id %></td>
     <td><%= medrecord.bt %></td>
     <td><%= medrecord.bp %></td>
     <td><%= medrecord.hr %></td>
@@ -34,4 +34,4 @@
 
 <br />
 
-<%= link_to 'New Medrecord', new_medrecord_path %>
+<%= link_to 'Create New Medical Record', new_medrecord_path %>
